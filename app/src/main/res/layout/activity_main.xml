@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <Button
+        android:id="@+id/btnRed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Red_Background"/>
+
+    <Button
+        android:id="@+id/btnGreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Green Background"
+        android:layout_below="@id/btnRed"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/btnRose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rose Background"
+        android:layout_below="@id/btnGreen"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/btnRiver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="River Background"
+        android:layout_below="@id/btnRose"
+        android:layout_marginTop="15dp"/>
+
+</RelativeLayout>
