@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFE6D8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- HEADER - Using RelativeLayout for positioning -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#5C4033"
+            android:padding="18dp">
+
+            <TextView
+                android:id="@+id/name"
+                android:text="Vaishnavi Bhosale"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/contact"
+                android:text="📞 +91 9970200904  |    ..t✉ bhosalevaishnavi200904@gmail.com"
+                android:textColor="#F5EBDD"
+                android:layout_below="@id/name"
+                android:layout_alignStart="@id/name"
+                android:layout_marginTop="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+        <!-- SKILLS SECTION -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="#FFFFFF"
+            android:padding="16dp">
+
+            <!-- Using AbsoluteLayout for Skills header positioning -->
+            <AbsoluteLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Skills"
+                    android:textColor="#800020"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_x="0dp"
+                    android:layout_y="0dp" />
+
+                <!-- TableLayout for organized skills display -->
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_x="0dp"
+                    android:layout_y="40dp"
+                    android:stretchColumns="*"
+                    android:shrinkColumns="*">
+
+                    <TableRow>
+                        <TextView
+                            android:text="Programming Languages:"
+                            android:textStyle="bold"
+                            android:textColor="#3E2723"
+                            android:padding="4dp"/>
+                        <TextView
+                            android:text="Java, HTML, CSS, JavaScript, Python, PHP"
+                            android:textColor="#3E2723"
+                            android:padding="4dp"/>
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:text="Frameworks and Libraries:"
+                            android:textStyle="bold"
+                            android:textColor="#3E2723"
+                            android:padding="4dp"/>
+                        <TextView
+                            android:text="Django, React"
+                            android:textColor="#3E2723"
+                            android:padding="4dp"/>
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:text="Database Management:"
+                            android:textStyle="bold"
+                            android:textColor="#3E2723"
+                            android:padding="4dp"/>
+                        <TextView
+                            android:text="MySQL"
+                            android:textColor="#3E2723"
+                            android:padding="4dp"/>
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:text="Operating Systems:"
+                            android:textStyle="bold"
+                            android:textColor="#3E2723"
+                            android:padding="4dp"/>
+                        <TextView
+                            android:text="Windows, Linux, Unix"
+                            android:textColor="#3E2723"
+                            android:padding="4dp"/>
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:text="Tools and Version Control:"
+                            android:textStyle="bold"
+                            android:textColor="#3E2723"
+                            android:padding="4dp"/>
+                        <TextView
+                            android:text="Git"
+                            android:textColor="#3E2723"
+                            android:padding="4dp"/>
+                    </TableRow>
+                </TableLayout>
+            </AbsoluteLayout>
+        </FrameLayout>
+
+        <!-- EDUCATION SECTION -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:layout_marginTop="12dp"
+            android:padding="16dp">
+
+            <TextView
+                android:text="Education"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#800020"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <!-- GridLayout for education timeline -->
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:columnCount="2"
+                android:rowCount="3"
+                android:alignmentMode="alignMargins"
+                android:columnOrderPreserved="false">
+
+                <TextView
+                    android:text="• DYPCET Kolhapur"
+                    android:textColor="#3E2723"
+                    android:textStyle="bold"
+                    android:padding="8dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"/>
+
+                <TextView
+                    android:text="BTech | CSE | 2026 | CGPA"
+                    android:textColor="#3E2723"
+                    android:padding="8dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"/>
+
+                <TextView
+                    android:text="• PVP Mahavidyalaya"
+                    android:textColor="#3E2723"
+                    android:textStyle="bold"
+                    android:padding="8dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"/>
+
+                <TextView
+                    android:text="Sangli | 2022 | 78%"
+                    android:textColor="#3E2723"
+                    android:padding="8dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"/>
+
+                <TextView
+                    android:text="• SSRSS Highschool"
+                    android:textColor="#3E2723"
+                    android:textStyle="bold"
+                    android:padding="8dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"/>
+
+                <TextView
+                    android:text="Malangaon | 2020 | 97.00%"
+                    android:textColor="#3E2723"
+                    android:padding="8dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"/>
+            </GridLayout>
+        </LinearLayout>
+
+        <!-- PROJECTS SECTION -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:layout_marginTop="12dp"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:text="Projects"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#800020"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <!-- ListView style layout for projects -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="8dp">
+
+                    <!-- Project 1 -->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:background="#F9F5F0"
+                        android:layout_marginBottom="8dp">
+
+                        <TextView
+                            android:id="@+id/project1_title"
+                            android:text="QuickScan – Automatic Attendance System"
+                            android:textColor="#800020"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:id="@+id/project1_desc"
+                            android:text="Face Recognition based attendance system for improved efficiency and accuracy"
+                            android:textColor="#3E2723"
+                            android:layout_below="@id/project1_title"
+                            android:layout_alignStart="@id/project1_title"
+                            android:layout_marginTop="4dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:id="@+id/project1_tech"
+                            android:text="Tech: Python, Django, OpenCV, NumPy, Pandas"
+                            android:textColor="#5C4033"
+                            android:fontFamily="monospace"
+                            android:layout_below="@id/project1_desc"
+                            android:layout_alignStart="@id/project1_title"
+                            android:layout_marginTop="4dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </RelativeLayout>
+
+                    <!-- Project 2 -->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:background="#F9F5F0"
+                        android:layout_marginBottom="8dp">
+
+                        <TextView
+                            android:id="@+id/project2_title"
+                            android:text="Smart City – Kolhapur"
+                            android:textColor="#800020"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:id="@+id/project2_desc"
+                            android:text="Centralized hub for city information (hospitals, maps, emergency contacts)"
+                            android:textColor="#3E2723"
+                            android:layout_below="@id/project2_title"
+                            android:layout_alignStart="@id/project2_title"
+                            android:layout_marginTop="4dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:id="@+id/project2_tech"
+                            android:text="Tech: HTML, CSS, PHP, JavaScript, MySQL"
+                            android:textColor="#5C4033"
+                            android:fontFamily="monospace"
+                            android:layout_below="@id/project2_desc"
+                            android:layout_alignStart="@id/project2_title"
+                            android:layout_marginTop="4dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </RelativeLayout>
+
+                    <!-- Project 3 -->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:background="#F9F5F0">
+
+                        <TextView
+                            android:id="@+id/project3_title"
+                            android:text="Xora – Website Builder (AI-SAAS)"
+                            android:textColor="#800020"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:id="@+id/project3_desc"
+                            android:text="AI-driven low-code/no-code platform for developers"
+                            android:textColor="#3E2723"
+                            android:layout_below="@id/project3_title"
+                            android:layout_alignStart="@id/project3_title"
+                            android:layout_marginTop="4dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:id="@+id/project3_tech"
+                            android:text="Tech: React.js, Next.js, Node.js, Tailwind CSS, MySQL"
+                            android:textColor="#5C4033"
+                            android:fontFamily="monospace"
+                            android:layout_below="@id/project3_desc"
+                            android:layout_alignStart="@id/project3_title"
+                            android:layout_marginTop="4dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+        <!-- ADDITIONAL SECTION: Certifications/Achievements -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:layout_marginTop="12dp"
+            android:padding="16dp">
+
+            <TextView
+                android:text="Additional Information"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#800020"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <!-- TableLayout for additional info -->
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:stretchColumns="*">
+
+                <TableRow>
+                    <TextView
+                        android:text="Languages:"
+                        android:textStyle="bold"
+                        android:textColor="#3E2723"
+                        android:padding="4dp"/>
+                    <TextView
+                        android:text="English, Hindi, Marathi"
+                        android:textColor="#3E2723"
+                        android:padding="4dp"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="Interests:"
+                        android:textStyle="bold"
+                        android:textColor="#3E2723"
+                        android:padding="4dp"/>
+                    <TextView
+                        android:text="Web Development, AI/ML, Open Source"
+                        android:textColor="#3E2723"
+                        android:padding="4dp"/>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
